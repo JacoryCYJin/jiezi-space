@@ -48,24 +48,6 @@ export function LanguageProvider({ children }) {
   };
 
   /**
-   * 翻译函数
-   * @param {string} key - 翻译键
-   * @param {object} params - 可选的参数对象，用于字符串插值
-   * @returns {string} 翻译后的文本
-   */
-  const t = (key, params = {}) => {
-    const translations = textConfig[language];
-    let text = translations[key] || key;
-    
-    // 支持简单的字符串插值
-    Object.keys(params).forEach(param => {
-      text = text.replace(`{${param}}`, params[param]);
-    });
-    
-    return text;
-  };
-
-  /**
    * 获取当前语言的文本配置
    * @returns {object} 当前语言的所有翻译文本
    */
@@ -76,7 +58,6 @@ export function LanguageProvider({ children }) {
   const value = {
     language,
     switchLanguage,
-    t,
     getCurrentTexts,
     supportedLanguages: ['zh', 'en']
   };

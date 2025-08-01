@@ -18,7 +18,7 @@ const navBarConfig = {
 };
 
 // 页面文本多语言配置
-const textConfig = {
+const heroTextConfig = {
   zh: {
     siteName: "芥子",
     heroTitle: "你好 芥子空间",
@@ -35,4 +35,4 @@ const languages = [
   { code: "en", name: "English", flag: "🇺🇸" },
 ];
 
-export { navBarConfig, textConfig, languages };
+export { navBarConfig, heroTextConfig, languages };

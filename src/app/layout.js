@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/ScrollTrigger";
 import NavBar from "@/components/NavBar";
-import { LanguageProvider } from "@/components/LanguageContext";
+import { LanguageProvider } from "@/utils/LanguageContext";
 import "./globals.css";
 
 // gasp 插件不会自动激活，需要手动注册
