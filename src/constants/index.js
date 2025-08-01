@@ -21,11 +21,11 @@ const navBarConfig = {
 const heroTextConfig = {
   zh: {
     siteName: "芥子",
-    heroTitle: "你好 芥子空间",
+    heroTitle: "这是芥子",
   },
   en: {
     siteName: "JieziSpace",
-    heroTitle: "Hello JieziSpace",
+    heroTitle: "JieziSpace",
   },
 };
 

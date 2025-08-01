@@ -26,7 +26,7 @@ const Hero = () => {
 
   return (
     <div className="h-[calc(100vh-3.75rem)] flex justify-center items-center">
-      <h1 className="hero-title text-4xl font-bold">{currentHeroText.heroTitle}</h1>
+        <div className="hero-title text-primary text-4xl font-bold ">{currentHeroText.heroTitle}</div>
     </div>
   );
 };

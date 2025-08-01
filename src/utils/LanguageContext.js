@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect } from 'react';
-import { textConfig } from '@/constants';
+import { heroTextConfig } from '@/constants';
 
 /**
  * 语言上下文，提供多语言功能
@@ -52,7 +52,7 @@ export function LanguageProvider({ children }) {
    * @returns {object} 当前语言的所有翻译文本
    */
   const getCurrentTexts = () => {
-    return textConfig[language] || textConfig.zh;
+    return heroTextConfig[language] || heroTextConfig.zh;
   };
 
   const value = {

@@ -7,13 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        // 自定义半透明背景色
-        "nav-bg": "#faf9f750",
-        // 也可以使用CSS变量方式
-        "nav-blur": "rgb(250 249 247 / 0.31)", // 等同于#faf9f750
+      // 自定义间距
+      spacing: {
+        '15': '3.75rem',  // 60px，用于导航栏高度
+        '50': '12.5rem',  // 200px，用于导航栏左右间距
       },
     },
   },
